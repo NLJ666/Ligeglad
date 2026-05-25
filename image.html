@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Image Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        img {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Text to Image Generator</h1>
+    <form id="promptForm">
+        <input type="text" id="promptInput" placeholder="Enter your prompt">
+        <button type="submit">Generate Image</button>
+    </form>
+    <div id="result"></div>
+
+    <script>
+        document.getElementById('promptForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const prompt = document.getElementById('promptInput').value;
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', 'http://localhost:8000', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    const response = JSON.parse(xhr.responseText);
+                    const resultDiv = document.getElementById('result');
+                    if (response.status === "success") {
+                        const img = document.createElement('img');
+                        img.src = response.filename;
+                        img.alt = "Generated Image";
+                        img.onload = function () {
+                            resultDiv.innerHTML = `<p>Prompt: ${response.prompt}</p>${img.outerHTML}`;
+                        };
+                        img.onerror = function () {
+                            resultDiv.innerHTML = `<p style="color: red;">Failed to load the image.</p>`;
+                        };
+                    } else {
+                        resultDiv.innerHTML = `<p style="color: red;">${response.message}</p>`;
+                    }
+                }
+            };
+            const data = { prompt: prompt };
+            xhr.send(JSON.stringify(data));
+        });
+    </script>
+</body>
+
+</html>

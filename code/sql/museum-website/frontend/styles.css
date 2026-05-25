@@ -1,0 +1,88 @@
+:root {
+            --nav-width: 1280px;
+            --main-card-size: 1280px 2000px;
+            --hover-color: #e74c3c;
+            --primary-color: #8b5a2b;
+            --secondary-color: #f4e7d3;
+            font-family: '宋体', SimSun, serif;
+            background-color: #8b5a2b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: '宋体', SimSun, serif;
+            background-color: #f9f6f0;
+        }
+
+        .nav-container {
+            width: var(--nav-width);
+            margin: 0 auto;
+            padding: 1rem 0;
+            background: var(--primary-color);
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            gap: 90px;
+        }
+
+        .nav-item a {
+            color: #f9f6f0;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .nav-item a:hover {
+            color: var(--hover-color);
+        }
+
+        .hero-card {
+            width: 1080px;
+            height: 500px;
+            margin: 2rem auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 1s;
+        }
+
+        .gallery-grid {
+            width: var(--nav-width);
+            margin: 3rem auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .exhibit-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            border: 1px solid #ddd;
+            padding: 1rem;
+        }
+
+        .model-container {
+            width: 100%;
+            height: 300px;
+            background: #f5f5f5;
+            position: relative;
+        }
+
+        .threejs-canvas {
+            width: 100%;
+            height: 100%;
+            touch-action: none;
+        }

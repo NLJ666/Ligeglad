@@ -1,0 +1,202 @@
+<!-- 壁画页面 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>壁画数字典藏 - AIGC文博元宇宙</title>
+   <link rel="stylesheet" href="../css_common.css" type="text/css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+
+    <style>
+    /* 继承原有图片容器的响应式特性 */
+    .hero-card {
+        width: 1280px;
+        height: 500px;
+        margin: 2rem auto;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* 视频容器适配 */
+    .video-wrapper {
+        width: 1280px;
+        height: 500px;
+        margin: 2rem auto;
+        position: relative;
+        padding-top: 56.25%; /* 16:9 比例 */
+    }
+
+    .slide-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* 保持与图片相同的填充方式 */
+        /* 增加视频质感 */
+        filter: brightness(0.98);
+        mix-blend-mode: multiply;
+    }
+
+    /* 移动端优化 */
+    @media (max-width: 768px) {
+    .slide-video {
+        object-fit: contain; /* 小屏幕显示完整内容 */
+    }
+    }
+</style>
+</head>
+<body>
+<!-- nav -->
+    <nav class="nav-container">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="首页最新版.html">首页</a></li>
+            <li class="nav-item"><a href="bronze.html">青铜器</a></li>
+            <li class="nav-item"><a href="oracle.html">甲骨文</a></li>
+            <li class="nav-item"><a href="porcelain.html">瓷器</a></li>
+            <li class="nav-item"><a href="mural.html">壁画</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero-card">
+    <!-- 视频容器 (保持与图片容器相同的结构) -->
+    <div class="video-wrapper">
+        <video
+            class="slide-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            poster="{% static './static/Image_footage/mural_image.jpg' %}"
+            controls>  <!-- 根据需求决定是否显示控制条 -->
+            <!-- 多格式视频源 (兼容不同浏览器) -->
+            <source src="../static/videos/mural_vedio.mp4" type="video/mp4">
+            <source src="{% static './static/videos/mural_vedio.mp4' %}" type="video/webm">
+            <!-- 降级方案 -->
+            <img src="../static/Image_footage/mural_image.jpg"
+                 alt="敦煌壁画静态图"
+                 style="width:100%;height:auto;">
+            <p>您的浏览器不支持视频播放，请升级浏览器</p>
+        </video>
+    </div>
+</section>
+
+
+    <script>
+        // 视频播放控制（可选）
+document.querySelector('.slide-video').addEventListener('click', function() {
+    if (this.paused) {
+        this.play();
+    } else {
+        this.pause();
+    }
+});
+    </script>
+
+    <section class="gallery-grid">
+    <!-- 01 -->
+        <article class="exhibit-card">
+            <div class="image-card">
+                <img src="../static/Image_footage/第172窟观无量寿经变.jpg" alt="展示图片">
+            </div>
+          <div class="card-content">
+            <h3>盛唐·第172窟观无量寿经变</h3><br>
+            <p>窟高4.5m，宽3.8m，中唐吐蕃时期（781-847）</p>
+            <p>矿物颜料多层叠染，金箔沥粉堆金工艺</p>
+            <p>主尊阿弥陀佛结跏趺坐，两侧观音势至菩萨璎珞垂绦，建筑群运用焦点透视法，展现唐代青绿山水巅峰技法，1944年常书鸿团队修复</p>
+        </div>
+        </article>
+    <!-- 02 -->
+        <article class="exhibit-card">
+            <div class="image-card">
+                <img src="../static/Image_footage/第220窟药师七佛图.jpg" alt="展示图片">
+            </div>
+          <div class="card-content">
+            <h3>初唐·第220窟药师七佛图</h3><br>
+            <p>东壁通高3.2m，贞观十六年（642）</p>
+            <p>朱砂铅丹叠染，白描铁线描勾形</p>
+            <p>七佛手执药器立于莲台，眷属十二神将甲胄分明，飞天帔帛运用"吴带当风"笔意，1943年剥离表层宋代重绘层现真容</p>
+        </div>
+        </article>
+    <!-- 03 -->
+    <article class="exhibit-card">
+        <div class="image-card">
+                <img src="../static/Image_footage/第285窟五百强盗成佛图.jpg" alt="展示图片">
+            </div>
+        <div class="card-content">
+            <h3>西魏·第285窟五百强盗成佛图</h3><br>
+            <p>南壁长5.6m，大统四年（538）</p>
+            <p>西域凹凸法与中原晕染法融合</p>
+            <p>连环画式描绘强盗受刑、出家证道场景，战士锁甲运用"曹衣出水"技法，山林用石青石绿没骨画法，1908年伯希和探险队摄影记录</p>
+        </div>
+    </article>
+
+    <!-- 04 -->
+    <article class="exhibit-card">
+        <div class="image-card">
+                <img src="../static/Image_footage/第156窟张议潮统军出行图.jpg" alt="展示图片">
+            </div>
+        <div class="card-content">
+            <h3>晚唐·第156窟张议潮统军出行图</h3><br>
+            <p>南壁长8.2m，咸通六年（865）</p>
+            <p>铁线描与兰叶描结合，铅白提亮技法</p>
+            <p>现存最早大型历史人物壁画，绘骑兵仪仗百余人，驼马采用"三花"饰鞍法，榜题墨书保存完整，1944年常书鸿团队揭取保护</p>
+        </div>
+    </article>
+
+    <!-- 05 -->
+    <article class="exhibit-card">
+        <div class="image-card">
+                <img src="../static/Image_footage/第428窟萨埵太子本生.jpg" alt="展示图片">
+            </div>
+        <div class="card-content">
+            <h3>北周·第428窟萨埵太子本生</h3><br>
+            <p>东壁长6.8m，建德元年（572）</p>
+            <p>土红线起稿，青金石颜料多层渲染</p>
+            <p>横卷式构图分12场景，饿虎造型受键陀罗艺术影响，山石用赭石勾皴，现藏敦煌研究院数字中心</p>
+        </div>
+    </article>
+
+    <!-- 06 -->
+    <article class="exhibit-card">
+        <div class="image-card">
+                <img src="../static/Image_footage/第3窟千手千眼观音.jpg" alt="展示图片">
+            </div>
+        <div class="card-content">
+            <h3>西夏·第3窟千手千眼观音</h3><br>
+            <p>北壁通高3.5m，至元年间（1271-1294）</p>
+            <p>湿壁画技法，金箔勾线</p>
+            <p>四十只主手持不同法器，背景《犁耕图》《酿酒图》反映世俗生活，采用"兰叶描"衣纹技法，现为敦煌研究院特级保护洞窟</p>
+        </div>
+    </article>
+
+    <!-- 07 -->
+    <article class="exhibit-card">
+       <div class="image-card">
+                <img src="../static/Image_footage/第276窟维摩诘经变.jpg" alt="展示图片">
+            </div>
+        <div class="card-content">
+            <h3>隋代·第276窟维摩诘经变</h3><br>
+            <p>西壁长4.2m，大业五年（609）</p>
+            <p>白描淡彩，赭石分染立体</p>
+            <p>维摩诘手执麈尾凭几而坐，天女衣带用"高古游丝描"，建筑斗拱符合《营造法式》规制，1943年张大千临摹作品现藏川博</p>
+        </div>
+    </article>
+
+    <!-- 08 -->
+    <article class="exhibit-card">
+        <div class="image-card">
+                <img src="../static/Image_footage/第61窟五台山全图.jpg" alt="展示图片">
+            </div>
+        <div class="card-content">
+            <h3>五代·第61窟五台山全图</h3><br>
+            <p>西壁长13m，显德三年（956）</p>
+            <p>青绿重彩，散点透视构图</p>
+            <p>绘城池寺庙百余处，骡队运用"钉头鼠尾描"，现存最大佛教全景式壁画，1937年梁思成按图索骥发现佛光寺</p>
+        </div>
+    </article>
+</section>
+</body>
+</html>

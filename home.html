@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIGC文博元宇宙</title>
+    <link rel="stylesheet" href="../search.css" type="text/css" />
+    <link rel="stylesheet" href="../css_common.css" type="text/css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+    <!-- nav -->
+    <nav class="nav-container">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="./首页最新版.html">首页</a></li>
+            <li class="nav-item"><a href="bronze.html">青铜器</a></li>
+            <li class="nav-item"><a href="oracle.html">甲骨文</a></li>
+            <li class="nav-item"><a href="porcelain.html">瓷器</a></li>
+            <li class="nav-item"><a href="mural.html">壁画</a></li>
+            <li class="nav-item"><a href="image.html">文生图</a></li>
+        </ul>
+    </nav>
+
+    <div class="search-card">
+        <input type="text" class="search-input" placeholder="请输入搜索内容...">
+        <button class="search-button">
+            <img src="search-icon.png" alt="搜索" class="search-icon">
+        </button>
+    </div>
+
+    <section class="hero-card">
+        <img src="../static/Image_footage/cover_page03.jpg" class="slide-image" alt id="cover1">
+    </section>
+
+    <main class="gallery-grid">
+        <!-- 01 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas1"
+                        data-model="./后母戊鼎.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list1" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/后母戊鼎.png" data-video="../static/videos/后母戊鼎.mp4">
+                    <div class="card-content">
+                        <h3>商代·后母戊鼎</h3><br>
+                        <p>现存最重的青铜器（832.84kg），腹部饕餮纹与云雷纹构成"三层花"装饰体系，鼎耳外侧双虎噬人纹象征王权威严。腹内壁"后母戊"三字铭文证实商代王室祭祀制度，双立耳造型体现商代复合范铸造技术巅峰，2011年国家博物馆定为镇馆之宝。</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- 02 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas2"
+                        data-model="./曾侯乙编钟.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list2" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/曾侯乙编钟.jpg" data-video="../static/videos/曾侯乙编钟.mp4">
+                    <div class="card-content">
+                        <h3>战国·曾侯乙编钟</h3><br>
+                        <p>65件青铜钟构成跨五个半八度的音域，每钟双音结构震惊世界乐坛。钟架彩绘纹样包含二十八宿天文图，错金铭文记载楚晋等国律名对应关系。1978年出土时仍能演奏《东方红》，改写世界音乐史，被誉为"古代交响乐团"。</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- 03 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas3"
+                        data-model="./三彩骆驼载乐俑.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list3" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/三彩骆驼载乐俑.jpg" data-video="../static/videos/三彩骆驼载乐俑.mp4">
+                    <div class="card-content">
+                        <h3>唐代·三彩骆驼载乐俑</h3><br>
+                        <p>通高58cm的驼背上载八人乐队，胡人乐师持西域乐器，印证《新唐书》"开元时西域朝献凡四百国"的记载。黄绿白三色流淌釉面呈现丝绸之路上商贸盛况，骆驼仰首嘶鸣的动态塑造达到三彩艺术顶峰，现藏陕西历史博物馆。</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- 04 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas4"
+                        data-model="./汝窑天青釉莲花式温碗.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list4" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/汝窑天青釉莲花式温碗.jpg" data-video="../static/videos/汝窑天青釉莲花式温碗.mp4">
+                    <div class="card-content">
+                        <h3>北宋·汝窑天青釉莲花式温碗</h3><br>
+                        <p>十瓣莲花造型对应"十全"哲学理念，0.2mm厚度的天青釉含玛瑙末，开片纹路如蝉翼。台北故宫收藏的传世孤品，2012年苏富比同类器拍出2.08亿港元，体现宋代文人"雨过天青云破处"的审美境界。</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- 05 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas5"
+                        data-model="./云冈第20窟释迦坐像.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list5" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/云冈第20窟释迦坐像.jpg" data-video="../static/videos/云冈第二十窟释迦坐像.mp4">
+                    <div class="card-content">
+                        <h3>北魏·云冈第20窟释迦坐像</h3><br>
+                        <p>高13.7米的露天大佛，袈裟衣纹受犍陀罗风格影响，右手施无畏印展现佛陀普度众生的慈悲。鼻梁直通额际的"希腊式"面相反映佛教艺术中国化进程，与龙门、敦煌并称三大石窟艺术宝库。</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- 06 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas6"
+                        data-model="./点翠凤冠.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list6" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/点翠凤冠.jpg" data-video="../static/videos/点翠凤冠.mp4">
+                    <div class="card-content">
+                        <h3>明定孝靖皇后·点翠凤冠</h3><br>
+                        <p>六龙三凤构成的主体采用累丝工艺，128颗红蓝宝石与5449颗珍珠组成明代宫廷珠宝镶嵌标准制式。翠羽在不同光线下呈现"蕉月""湖色"等七种色泽，1957年定陵出土的明代唯一完整凤冠，再现万历朝皇家大婚仪制。</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- 07 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas7"
+                        data-model="./张衡地动仪.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list7" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/张衡地动仪.jpg" data-video="../static/videos/张衡地动仪.mp4">
+                    <div class="card-content">
+                        <h3>东汉·张衡地动仪（复原模型）</h3><br>
+                        <p>精铜铸造的八龙对应八方，内部悬垂摆原理比西方早1700年。《后汉书》记载其成功检测陇西地震，现代实验证实其惯性摆设计灵敏度可达里氏4级。中国科技馆1:1复原模型展现古代机械制造智慧。</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- 08 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas8"
+                        data-model="./鎏金铜胎珐琅麒麟.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list8" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/鎏金铜胎珐琅麒麟.jpg" data-video="../static/videos/鎏金铜胎珐琅麒麟.mp4">
+                    <div class="card-content">
+                        <h3>清乾隆·鎏金铜胎珐琅麒麟</h3><br>
+                        <p>高175cm的瑞兽结合掐丝珐琅与錾胎工艺，鳞片鎏金耗时3200工时。1793年马戛尔尼使团礼品清单记载此类器物作为外交国礼，大英博物馆藏同款见证康乾时期东西方文明对话。</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+
+     <script>
+        // 初始化每个3D模型
+        // 定义一个函数来初始化每个3D模型
+        function init3DModel(canvasId, modelPath) {
+            const canvas = document.getElementById(canvasId);
+            if (!canvas) {
+                console.error('Canvas not found.');
+                return;
+            }
+
+            const scene = new THREE.Scene();
+            // 设置场景背景颜色可以替换为其他十六进制颜色值
+            scene.background = new THREE.Color(0xFFFFFF);
+
+            const camera = new THREE.PerspectiveCamera(75, canvas.offsetWidth / canvas.offsetHeight, 0.1, 1000);
+            const renderer = new THREE.WebGLRenderer({ canvas });
+            renderer.setSize(canvas.offsetWidth, canvas.offsetHeight);
+
+            const ambientLight = new THREE.AmbientLight(0x404040);
+            scene.add(ambientLight);
+            const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+            directionalLight.position.set(1, 1, 1).normalize();
+            scene.add(directionalLight);
+
+            const loader = new THREE.GLTFLoader();
+            loader.load(modelPath, (gltf) => {
+                const model = gltf.scene;
+                model.scale.set(3.0, 3.0, 3.0);
+                model.position.set(0, 0, 0);
+                scene.add(model);
+                const cameraDistance = 5;
+                camera.position.set(0, 0, cameraDistance);
+                camera.lookAt(model.position);
+
+                function animate() {
+                    requestAnimationFrame(animate);
+                    model.rotation.y += 0.01;
+                    renderer.render(scene, camera);
+                }
+                animate();
+            }, undefined, (error) => {
+                console.error(error);
+            });
+        }
+
+        init3DModel('canvas1', './后母戊鼎.glb');
+        init3DModel('canvas2', './曾侯乙编钟.glb');
+        init3DModel('canvas3', './三彩骆驼载乐俑.glb');
+        init3DModel('canvas4', './汝窑天青釉莲花式温碗.glb');
+        init3DModel('canvas5', './云冈第20窟释迦坐像.glb');
+        init3DModel('canvas6', './点翠凤冠.glb');
+        init3DModel('canvas7', './张衡地动仪.glb');
+        init3DModel('canvas8', './鎏金铜胎珐琅麒麟.glb');
+
+        const threejsCanvases = document.querySelectorAll('.threejs-canvas');
+        threejsCanvases.forEach((canvas, index) => {
+            const modelPath = canvas.dataset.model;
+            init3DModel(canvas.id || `canvas-${index + 4}`, modelPath);
+        });
+
+
+        // 搜索功能逻辑
+        const searchButton = document.querySelector('.search-button');
+        const searchInput = document.querySelector('.search-input');
+
+        searchButton.addEventListener('click', () => {
+            const searchQuery = searchInput.value;
+            const url = `https://www.dpm.org.cn/search.html?keyword=${searchQuery}`; // 故宫博物馆检索页面的URL，假设的格式，可能需要调整
+            window.location.href = url;
+        });
+
+    </script>
+
+    <!-- 小窗播放数字人视频 -->
+    <div id="popup-window" class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-8 rounded-md shadow-lg z-50">
+        <div id="popup-content" class="flex space-x-4">
+            <div id="image-section" class="flex-1">
+                <img id="popup-image" class="w-full h-auto rounded-md" src="" alt="文物图片">
+            </div>
+            <div id="video-section" class="flex-1">
+                <video id="popup-video" class="w-full h-auto rounded-md" controls>
+                    <source src="" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <button id="close-popup" class="absolute top-2 right-2 text-gray-600 hover:text-gray-800 transition duration-300">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+
+
+    <script>
+        function initArtifactPopup() {
+            const artifactItems = document.querySelectorAll('.artifact-item');
+            const popupWindow = document.getElementById('popup-window');
+            const popupImage = document.getElementById('popup-image');
+            const popupVideo = document.getElementById('popup-video');
+            const closePopup = document.getElementById('close-popup');
+
+            // 为每个文物项添加点击事件监听器
+            artifactItems.forEach((item) => {
+                item.addEventListener('click', () => {
+                    const imageSrc = item.dataset.image;
+                    const videoSrc = item.dataset.video;
+
+                    popupImage.src = imageSrc;
+                    popupVideo.src = videoSrc;
+
+                    // 加载视频
+                    popupVideo.load();
+
+                    // 显示弹出窗口
+                    popupWindow.classList.remove('hidden');
+                });
+            });
+
+            // 为关闭按钮添加点击事件监听器
+            closePopup.addEventListener('click', () => {
+                popupWindow.classList.add('hidden');
+            });
+
+            // 为弹出窗口添加点击事件监听器，点击窗口外部关闭窗口
+            popupWindow.addEventListener('click', (event) => {
+                if (event.target === popupWindow) {
+                    popupWindow.classList.add('hidden');
+                }
+            });
+        }
+
+        // 在页面加载完成后调用初始化函数
+        window.addEventListener('load', () => {
+            initArtifactPopup();
+        });
+    </script>
+</body>
+</html>

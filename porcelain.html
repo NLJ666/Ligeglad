@@ -1,0 +1,316 @@
+<!-- 瓷器页面 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>瓷器数字典藏 - AIGC文博元宇宙</title>
+    <link rel="stylesheet" href="../css_common.css" type="text/css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+    <nav class="nav-container">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="首页最新版.html">首页</a></li>
+            <li class="nav-item"><a href="bronze.html">青铜器</a></li>
+            <li class="nav-item"><a href="oracle.html">甲骨文</a></li>
+            <li class="nav-item"><a href="porcelain.html">瓷器</a></li>
+            <li class="nav-item"><a href="mural.html">壁画</a></li>
+        </ul>
+    </nav>
+
+    <section class="gallery-grid">
+    <!-- 01 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas1"
+                        data-model="./汝窑天青釉弦纹樽.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list1" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/汝窑天青釉弦纹樽.jpg" data-video="../static/videos/汝窑天青釉弦纹樽.mp4">
+                    <div class="card-content">
+                            <h3>北宋·汝窑天青釉弦纹樽</h3><br>
+                            <p>高12.9cm，口径18cm，1987年河南宝丰清凉寺出土</p>
+                            <p>满釉支烧，釉层含玛瑙末，开片呈蝉翼纹</p>
+                            <p>现存唯一汝窑樽式器，三道弦纹间隔七组鼓钉，底留5个芝麻钉痕，2012年苏富比同类器拍出2.94亿港元，现藏北京故宫博物院</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    <!-- 02 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas2"
+                        data-model="./青花鬼谷子下山图罐.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list2" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/青花鬼谷子下山图罐.jpg" data-video="../static/videos/青花鬼谷子下山图罐.mp4">
+                    <div class="card-content">
+                        <h3>元·青花鬼谷子下山图罐</h3><br>
+                        <p>高27.5cm，腹径33cm，2005年伦敦佳士得拍卖</p>
+                        <p>苏麻离青料，多层次留白拓印技法</p>
+                        <p>描绘孙膑营救鬼谷子场景，青花发色呈现铁锈斑，2005年拍得2.3亿元创中国艺术品纪录，现藏英国古董商埃斯肯纳齐处</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    <!-- 03 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas3"
+                        data-model="./斗彩鸡缸杯.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list3" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/斗彩鸡缸杯.jpg" data-video="../static/videos/斗彩鸡缸杯.mp4">
+                    <div class="card-content">
+                        <h3>明成化·斗彩鸡缸杯</h3><br>
+                        <p>高3.4cm，口径8.3cm，1999年香港苏富比释出</p>
+                        <p>釉下青花与釉上彩二次烧造工艺</p>
+                        <p>绘童子戏鸡纹，胎体厚度仅0.8mm，2014年刘益谦2.8亿港元竞得，现存上海龙美术馆</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    <!-- 04 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas4"
+                        data-model="./粉彩镂空转心瓶.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list4" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/粉彩镂空转心瓶.jpg" data-video="../static/videos/粉彩镂空转心瓶.mp4">
+                    <div class="card-content">
+                        <h3>清乾隆·粉彩镂空转心瓶</h3><br>
+                        <p>高40.2cm，腹径24.8cm，故宫旧藏</p>
+                        <p>分层拉坯与活动机关嵌套技术</p>
+                        <p>外层镂空四季花卉，内胆绘婴戏图，旋转装置含12个活动部件，2010年伦敦5.5亿元成交，现藏中国国家博物馆</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    <!-- 05 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas5"
+                        data-model="./鲁山窑花釉腰鼓.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list5" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/鲁山窑花釉腰鼓.jpg" data-video="../static/videos/鲁山窑花釉腰鼓.mp4">
+                    <div class="card-content">
+                            <h3>唐·鲁山窑花釉腰鼓</h3><br>
+                            <p>长58.9cm，鼓面径22cm，北京故宫藏</p>
+                            <p>黑釉泼斑与窑变流纹技艺</p>
+                            <p>器身施月白釉斑，印证南卓《羯鼓录》记载，现存唯一完整唐代瓷质乐器，底部墨书"赵家"款</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    <!-- 06 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas6"
+                        data-model="./官窑青釉八方弦纹盘口瓶.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list6" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/官窑青釉八方弦纹盘口瓶.jpg" data-video="../static/videos/官窑青釉八方弦纹盘口瓶.mp4">
+                    <div class="card-content">
+                            <h3>南宋·官窑青釉八方弦纹盘口瓶</h3><br>
+                            <p>高21.9cm，口径8.5cm，2015年香港苏富比拍品</p>
+                            <p>紫金土胎，多次施釉工艺</p>
+                            <p>八方形制对应八卦，釉面金丝铁线开片，1.14亿港元成交价刷新宋瓷纪录，现藏上海龙美术馆</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    <!-- 07 -->
+         <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas7"
+                        data-model="./青花海水江崖纹三足炉.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list7" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/青花海水江崖纹三足炉.jpg" data-video="../static/videos/青花海水江崖纹三足炉.mp4">
+                    <div class="card-content">
+                            <h3>明永乐·青花海水江崖纹三足炉</h3><br>
+                            <p>高55.5cm，口径37.5cm，景德镇御窑遗址出土</p>
+                            <p>大件器物分段接坯技术</p>
+                            <p>海水纹多达九层，器底楷书"永乐年制"暗款，故宫太和殿前同款香炉原型，现藏南京博物院</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    <!-- 08 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas8"
+                        data-model="./珐琅彩蓝地牡丹纹碗.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list8" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/珐琅彩蓝地牡丹纹碗.jpg" data-video="../static/videos/珐琅彩蓝地牡丹纹碗.mp4">
+                    <div class="card-content">
+                           <h3>清雍正·珐琅彩蓝地牡丹纹碗</h3><br>
+                            <p>高5.2cm，口径11cm，台北故宫博物院藏</p>
+                            <p>景德镇白瓷胎加珐琅料二次烧制</p>
+                            <p>蓝彩含钴料与玻璃质调和，花瓣采用西洋明暗技法，底款料彩"雍正年制"为皇帝御批样式</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+</section>
+<script>
+        // 初始化每个3D模型
+        // 定义一个函数来初始化每个3D模型
+        function init3DModel(canvasId, modelPath) {
+            const canvas = document.getElementById(canvasId);
+            if (!canvas) {
+                console.error('Canvas not found.');
+                return;
+            }
+
+            const scene = new THREE.Scene();
+            // 设置场景背景颜色可以替换为其他十六进制颜色值
+            scene.background = new THREE.Color(0xFFFFFF);
+
+            const camera = new THREE.PerspectiveCamera(75, canvas.offsetWidth / canvas.offsetHeight, 0.1, 1000);
+            const renderer = new THREE.WebGLRenderer({ canvas });
+            renderer.setSize(canvas.offsetWidth, canvas.offsetHeight);
+
+            const ambientLight = new THREE.AmbientLight(0x404040);
+            scene.add(ambientLight);
+            const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+            directionalLight.position.set(1, 1, 1).normalize();
+            scene.add(directionalLight);
+
+            const loader = new THREE.GLTFLoader();
+            loader.load(modelPath, (gltf) => {
+                const model = gltf.scene;
+                model.scale.set(3.0, 3.0, 3.0);
+                model.position.set(0, 0, 0);
+                scene.add(model);
+                const cameraDistance = 5;
+                camera.position.set(0, 0, cameraDistance);
+                camera.lookAt(model.position);
+
+                function animate() {
+                    requestAnimationFrame(animate);
+                    model.rotation.y += 0.01;
+                    renderer.render(scene, camera);
+                }
+                animate();
+            }, undefined, (error) => {
+                console.error(error);
+            });
+        }
+
+        init3DModel('canvas1', './汝窑天青釉弦纹樽.glb');
+        init3DModel('canvas2', './青花鬼谷子下山图罐.glb');
+        init3DModel('canvas3', './斗彩鸡缸杯.glb');
+        init3DModel('canvas4', './粉彩镂空转心瓶.glb');
+        init3DModel('canvas5', './鲁山窑花釉腰鼓.glb');
+        init3DModel('canvas6', './官窑青釉八方弦纹盘口瓶.glb');
+        init3DModel('canvas7', './青花海水江崖纹三足炉.glb');
+        init3DModel('canvas8', './珐琅彩蓝地牡丹纹碗.glb');
+
+        const threejsCanvases = document.querySelectorAll('.threejs-canvas');
+        threejsCanvases.forEach((canvas, index) => {
+            const modelPath = canvas.dataset.model;
+            init3DModel(canvas.id || `canvas-${index + 4}`, modelPath);
+        });
+    </script>
+
+    <!-- 小窗播放数字人视频 -->
+    <div id="popup-window" class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-8 rounded-md shadow-lg z-50">
+        <div id="popup-content" class="flex space-x-4">
+            <div id="image-section" class="flex-1">
+                <img id="popup-image" class="w-full h-auto rounded-md" src="" alt="文物图片">
+            </div>
+            <div id="video-section" class="flex-1">
+                <video id="popup-video" class="w-full h-auto rounded-md" controls>
+                    <source src="" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <button id="close-popup" class="absolute top-2 right-2 text-gray-600 hover:text-gray-800 transition duration-300">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <script>
+        function initArtifactPopup() {
+            const artifactItems = document.querySelectorAll('.artifact-item');
+            const popupWindow = document.getElementById('popup-window');
+            const popupImage = document.getElementById('popup-image');
+            const popupVideo = document.getElementById('popup-video');
+            const closePopup = document.getElementById('close-popup');
+
+            // 为每个文物项添加点击事件监听器
+            artifactItems.forEach((item) => {
+                item.addEventListener('click', () => {
+                    const imageSrc = item.dataset.image;
+                    const videoSrc = item.dataset.video;
+
+                    popupImage.src = imageSrc;
+                    popupVideo.src = videoSrc;
+
+                    // 加载视频
+                    popupVideo.load();
+
+                    // 显示弹出窗口
+                    popupWindow.classList.remove('hidden');
+                });
+            });
+
+            // 为关闭按钮添加点击事件监听器
+            closePopup.addEventListener('click', () => {
+                popupWindow.classList.add('hidden');
+            });
+
+            // 为弹出窗口添加点击事件监听器，点击窗口外部关闭窗口
+            popupWindow.addEventListener('click', (event) => {
+                if (event.target === popupWindow) {
+                    popupWindow.classList.add('hidden');
+                }
+            });
+        }
+
+        // 在页面加载完成后调用初始化函数
+        window.addEventListener('load', () => {
+            initArtifactPopup();
+        });
+    </script>
+</body>
+</html>

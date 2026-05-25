@@ -1,0 +1,315 @@
+<!-- 甲骨文页 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>甲骨文数字典藏 - AIGC文博元宇宙</title>
+    <link rel="stylesheet" href="../css_common.css" type="text/css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+    <nav class="nav-container">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="首页最新版.html">首页</a></li>
+            <li class="nav-item"><a href="bronze.html">青铜器</a></li>
+            <li class="nav-item"><a href="oracle.html">甲骨文</a></li>
+            <li class="nav-item"><a href="porcelain.html">瓷器</a></li>
+            <li class="nav-item"><a href="mural.html">壁画</a></li>
+        </ul>
+    </nav>
+
+    <section class="gallery-grid">
+        <!-- 01 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas1"
+                        data-model="./四方风名甲骨.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list1" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/四方风名甲骨.jpg" data-video="../static/videos/四方风名甲骨.mp4">
+                    <div class="card-content">
+                            <h3>商代·四方风名甲骨</h3><br>
+                            <p>长24.5cm，宽19cm，1899年河南安阳殷墟出土</p>
+                            <p>单刀契刻与双刀复刻结合，朱砂填涂笔划</p>
+                            <p>记载四方神名与风神名，印证《山海经》天文体系，骨版裂纹体现商代占卜灼烧技法，现藏中国国家博物馆</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    <!-- 02 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas3"
+                        data-model="./大龟四版.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list3" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/大龟四版.jpg" data-video="../static/videos/大龟四版.mp4">
+                    <div class="card-content">
+                        <h3>商代·大龟四版</h3><br>
+                        <p>长28cm，宽18cm，1928年殷墟科学发掘首获</p>
+                        <p>整龟腹甲分段契刻，钻凿排列呈螺旋结构</p>
+                        <p>完整记录干支表与气象占卜，发现"贞人"群体证据，开创甲骨断代研究体系，现藏台北历史语言研究所</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    <!-- 03 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas3"
+                        data-model="./鹿顶骨记事刻辞.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list3" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/鹿顶骨记事刻辞.jpg" data-video="../static/videos/鹿顶骨记事刻辞.mp4">
+                    <div class="card-content">
+                        <h3>商代·鹿顶骨记事刻辞</h3><br>
+                        <p>长32cm，宽21cm，1936年YH127坑出土</p>
+                        <p>锐器刻划与颜料填涂复合工艺</p>
+                        <p>记载商王田猎获鹿二百零五只，骨面残留朱砂祭祀痕迹，契口方向反映右书书写规范，现藏中国社会科学院考古研究所</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    <!-- 04 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas4"
+                        data-model="./宰丰骨匕刻辞.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list4" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/宰丰骨匕刻辞.jpg" data-video="../static/videos/宰丰骨匕刻辞.mp4">
+                    <div class="card-content">
+                        <h3>商代·宰丰骨匕刻辞</h3><br>
+                        <p>长27.3cm，宽3.8cm，传安阳出土</p>
+                        <p>错位双面契刻，字口镶嵌绿松石</p>
+                        <p>记载商王赏赐宰丰事件，字势开合如青铜铭文，骨脊血槽保留屠宰加工痕迹，现藏故宫博物院</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    <!-- 05 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas5"
+                        data-model="./土方征涂朱卜骨.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list5" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/土方征涂朱卜骨.jpg" data-video="../static/videos/土方征涂朱卜骨.mp4">
+                    <div class="card-content">
+                            <h3>商代·土方征涂朱卜骨</h3><br>
+                            <p>长43cm，宽24cm，1915年小屯村北出土</p>
+                            <p>分层契刻与朱砂套色技术</p>
+                            <p>记录土方入侵边邑事件，背面占卜灼痕呈"卜"字形裂纹，字口氧化层验证三千年埋藏环境，现藏天津博物馆</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    <!-- 06 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas6"
+                        data-model="./妇好娩子卜甲.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list6" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/妇好娩子卜甲.jpg" data-video="../static/videos/妇好娩子卜甲.mp4">
+                    <div class="card-content">
+                            <h3>商代·妇好娩子卜甲</h3><br>
+                            <p>长29cm，宽18cm，1973年殷墟宫殿区出土</p>
+                            <p>龟甲盾纹契刻与钻凿对应</p>
+                            <p>记载武丁王妃妇好分娩占卜，裂纹走向反映古代产期预测，甲桥部位保留穿孔系绳痕迹，现藏河南博物院</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    <!-- 07 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas7"
+                        data-model="./祭祀狩猎涂朱牛骨.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list7" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/祭祀狩猎涂朱牛骨.jpg" data-video="../static/videos/祭祀狩猎涂朱牛骨.mp4">
+                    <div class="card-content">
+                        <h3>商代·祭祀狩猎涂朱牛骨</h3><br>
+                        <p>长32.2cm，宽19.8cm，1904年小屯村南出土</p>
+                        <p>双面错位契刻，朱砂颜料多层附着</p>
+                        <p>记载商王猎获犀牛与祭祀河神，骨面残留青铜器刮磨痕迹，现藏中国国家图书馆</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    <!-- 08 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas8"
+                        data-model="./干支表牛胛骨.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list8" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/干支表牛胛骨.jpg" data-video="../static/videos/干支表牛胛骨.mp4">
+                    <div class="card-content">
+                        <h3>商代·干支表牛胛骨</h3><br>
+                        <p>长36.5cm，宽22cm，1920年殷墟出土</p>
+                        <p>网格线辅助契刻，字距精准控制</p>
+                        <p>完整保存六十甲子循环系统，骨臼部位契刻月相符号，侧面烧灼痕迹呈现商代历法验证方式，现藏上海博物馆</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+</section>
+<script>
+        // 初始化每个3D模型
+        // 定义一个函数来初始化每个3D模型
+        function init3DModel(canvasId, modelPath) {
+            const canvas = document.getElementById(canvasId);
+            if (!canvas) {
+                console.error('Canvas not found.');
+                return;
+            }
+
+            const scene = new THREE.Scene();
+            // 设置场景背景颜色可以替换为其他十六进制颜色值
+            scene.background = new THREE.Color(0xFFFFFF);
+
+            const camera = new THREE.PerspectiveCamera(75, canvas.offsetWidth / canvas.offsetHeight, 0.1, 1000);
+            const renderer = new THREE.WebGLRenderer({ canvas });
+            renderer.setSize(canvas.offsetWidth, canvas.offsetHeight);
+
+            const ambientLight = new THREE.AmbientLight(0x404040);
+            scene.add(ambientLight);
+            const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+            directionalLight.position.set(1, 1, 1).normalize();
+            scene.add(directionalLight);
+
+            const loader = new THREE.GLTFLoader();
+            loader.load(modelPath, (gltf) => {
+                const model = gltf.scene;
+                model.scale.set(3.0, 3.0, 3.0);
+                model.position.set(0, 0, 0);
+                scene.add(model);
+                const cameraDistance = 5;
+                camera.position.set(0, 0, cameraDistance);
+                camera.lookAt(model.position);
+
+                function animate() {
+                    requestAnimationFrame(animate);
+                    model.rotation.y += 0.01;
+                    renderer.render(scene, camera);
+                }
+                animate();
+            }, undefined, (error) => {
+                console.error(error);
+            });
+        }
+
+        init3DModel('canvas1', './四方风名甲骨.glb');
+        init3DModel('canvas2', './龟四版.glb');
+        init3DModel('canvas3', './鹿顶骨记事刻辞.glb');
+        init3DModel('canvas4', './宰丰骨匕刻辞.glb');
+        init3DModel('canvas5', './土方征涂朱卜骨.glb');
+        init3DModel('canvas6', './妇好娩子卜甲.glb');
+        init3DModel('canvas7', './祭祀狩猎涂朱牛骨.glb');
+        init3DModel('canvas8', './干支表牛胛骨.glb');
+
+        const threejsCanvases = document.querySelectorAll('.threejs-canvas');
+        threejsCanvases.forEach((canvas, index) => {
+            const modelPath = canvas.dataset.model;
+            init3DModel(canvas.id || `canvas-${index + 4}`, modelPath);
+        });
+    </script>
+
+    <!-- 小窗播放数字人视频 -->
+    <div id="popup-window" class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-8 rounded-md shadow-lg z-50">
+        <div id="popup-content" class="flex space-x-4">
+            <div id="image-section" class="flex-1">
+                <img id="popup-image" class="w-full h-auto rounded-md" src="" alt="文物图片">
+            </div>
+            <div id="video-section" class="flex-1">
+                <video id="popup-video" class="w-full h-auto rounded-md" controls>
+                    <source src="" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <button id="close-popup" class="absolute top-2 right-2 text-gray-600 hover:text-gray-800 transition duration-300">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <script>
+        function initArtifactPopup() {
+            const artifactItems = document.querySelectorAll('.artifact-item');
+            const popupWindow = document.getElementById('popup-window');
+            const popupImage = document.getElementById('popup-image');
+            const popupVideo = document.getElementById('popup-video');
+            const closePopup = document.getElementById('close-popup');
+
+            // 为每个文物项添加点击事件监听器
+            artifactItems.forEach((item) => {
+                item.addEventListener('click', () => {
+                    const imageSrc = item.dataset.image;
+                    const videoSrc = item.dataset.video;
+
+                    popupImage.src = imageSrc;
+                    popupVideo.src = videoSrc;
+
+                    // 加载视频
+                    popupVideo.load();
+
+                    // 显示弹出窗口
+                    popupWindow.classList.remove('hidden');
+                });
+            });
+
+            // 为关闭按钮添加点击事件监听器
+            closePopup.addEventListener('click', () => {
+                popupWindow.classList.add('hidden');
+            });
+
+            // 为弹出窗口添加点击事件监听器，点击窗口外部关闭窗口
+            popupWindow.addEventListener('click', (event) => {
+                if (event.target === popupWindow) {
+                    popupWindow.classList.add('hidden');
+                }
+            });
+        }
+
+        // 在页面加载完成后调用初始化函数
+        window.addEventListener('load', () => {
+            initArtifactPopup();
+        });
+    </script>
+</body>
+</html>

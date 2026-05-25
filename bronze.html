@@ -1,0 +1,316 @@
+<!-- 青铜器页面 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>青铜器数字典藏 - AIGC文博元宇宙</title>
+    <link rel="stylesheet" href="../css_common.css" type="text/css" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+    <nav class="nav-container">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="首页最新版.html">首页</a></li>
+            <li class="nav-item"><a href="bronze.html">青铜器</a></li>
+            <li class="nav-item"><a href="oracle.html">甲骨文</a></li>
+            <li class="nav-item"><a href="porcelain.html">瓷器</a></li>
+            <li class="nav-item"><a href="mural.html">壁画</a></li>
+        </ul>
+    </nav>
+
+    <section class="gallery-grid">
+        <!-- 01 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas1"
+                        data-model="./司母辛方鼎.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list1" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/司母辛方鼎.jpg" data-video="../static/videos/司母辛方鼎.mp4">
+                    <div class="card-content">
+                         <h3>商代·司母辛方鼎</h3><br>
+                <p>通高80.1cm，重128kg，1976年河南安阳妇好墓出土</p>
+                <p>双层复合范铸造，鼎腹三层纹饰带（饕餮纹-夔龙纹-蝉纹）构成商代典型"三层花"装饰体系</p>
+                <p>鼎腹内壁"司母辛"铭文印证商王武丁配偶妇好的传奇生平，四棱铸接处的镂空扉棱展现早商青铜铸造巅峰技艺，足部兽面纹瞳孔镶嵌绿松石，现藏中国社会科学院考古研究所</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- 02 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas2"
+                        data-model="./大盂鼎.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list2" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/大盂鼎.jpg" data-video="../static/videos/大盂鼎.mp4">
+                    <div class="card-content">
+                        <<h3>西周·大盂鼎</h3><br>
+                <p>高101.9cm，重153.5kg，1849年陕西郿县出土</p>
+                <p>浑铸法一次成型，鼎腹波曲纹开西周中期纹饰革新先河</p>
+                <p>291字铭文记载康王训诰，创金文书法"雍容浑厚"典范，鼎足上部浮雕立体饕餮，传承商代狞厉之美，清代潘祖荫"海内三宝"之一，现藏中国国家博物馆</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- 03 -->
+         <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas3"
+                        data-model="./虢季子白盘.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list3" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/虢季子白盘.jpg" data-video="../static/videos/虢季子白盘.mp4">
+                    <div class="card-content">
+                        <h3>西周·虢季子白盘</h3><br>
+                <p>长137.2cm，宽86.5cm，重215.3kg，1840年陕西宝鸡出土</p>
+                <p>失蜡法铸造的现存最大青铜盘，盘壁厚度均匀控制在3mm</p>
+                <p>111字铭文记载西周宣王时期对猃狁作战，开后世碑刻章法先河，盘内四壁饰环带纹，盘底铸有八组卷体龙纹，太平天国时期曾作马槽，现藏中国国家博物馆</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- 04 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas4"
+                        data-model="./莲鹤方壶.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list4" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/莲鹤方壶.jpg" data-video="../static/videos/莲鹤方壶.mp4">
+                    <div class="card-content">
+                        <h3>春秋·莲鹤方壶</h3><br>
+                <p>通高126cm，重64.28kg，1923年河南新郑出土</p>
+                <p>分铸焊接技术典范，盖顶立鹤采用榫卯活链结构</p>
+                <p>壶身蟠龙纹间饰立雕双兽，莲瓣形盖沿铸有18只回首灵兽，郭沫若称其"时代精神之象征"，故宫博物院与河南博物院各藏一件</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- 05 -->
+         <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas5"
+                        data-model="./吴王夫差剑.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list5" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/吴王夫差剑.jpg" data-video="../static/videos/吴王夫差剑.mp4">
+                    <div class="card-content">
+                         <h3>春秋·吴王夫差剑</h3><br>
+                <p>长58.3cm，宽5cm，1976年河南辉县出土</p>
+                <p>剑身菱形暗格纹经硫化处理，复合金属铸造技术</p>
+                <p>近格处铸"攻吾王夫差自作其元用"鸟篆铭文，剑首同心圆纹饰由0.2mm细槽构成，见证吴越铸剑"削铁如泥"传说，现藏中国国家博物馆</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- 06 -->
+         <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas6"
+                        data-model="./曾侯乙尊盘.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list6" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/曾侯乙尊盘.jpg" data-video="../static/videos/曾侯乙尊盘.mp4">
+                    <div class="card-content">
+                         <h3>战国·曾侯乙尊盘</h3><br>
+                <p>尊高33.1cm，盘高24cm，1978年湖北随州出土</p>
+                <p>失蜡法铸造巅峰，整体34个部件由56处焊点连接</p>
+                <p>尊颈与盘口透空蟠螭纹精密如丝，局部纹饰间隙不足1mm，印证《考工记》"天有时，地有气，材有美，工有巧"的铸造理念，现藏湖北省博物馆</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- 07 -->
+         <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas7"
+                        data-model="./错金银镶嵌丝网套铜壶.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list7" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/错金银镶嵌丝网套铜壶.jpg" data-video="../static/videos/错金银镶嵌丝网套铜壶.mp4">
+                    <div class="card-content">
+                        <h3>战国·错金银镶嵌丝网套铜壶</h3><br>
+                <p>高24cm，口径12.8cm，1965年江苏涟水出土</p>
+                <p>首创错金银与镶嵌绿松石复合工艺</p>
+                <p>壶身丝网套由96条卷龙、576枚梅花钉组成，网套铜丝直径仅0.5mm，展现战国精密铸造技术，现藏南京博物院</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- 08 -->
+        <article class="exhibit-card">
+            <div class="model-container">
+                <canvas id="canvas8"
+                        data-model="./长信宫灯.glb"
+                        data-auto-rotate="true"
+                        style="width: 100%; height: 100%">
+                </canvas>
+            </div>
+            <div id="artifact-list8" class="flex-1 p-4 space-y-4">
+                <div class="artifact-item cursor-pointer border border-gray-300 p-4 rounded-md hover:bg-gray-100 transition duration-300"
+                     data-artifact="artifact1" data-image="../static/Image_footage/长信宫灯.jpg" data-video="../static/videos/长信宫灯.mp4">
+                    <div class="card-content">
+                         <h3>西汉·长信宫灯</h3><br>
+                <p>高48cm，重15.85kg，1968年河北满城出土</p>
+                <p>鎏金工艺与环保设计结合，灯罩可旋转调节光照</p>
+                <p>宫女右臂为烟道，通过袖管储水过滤烟尘，灯座刻有"阳信家"等65字铭文，体现汉代"器以载道"造物思想，现藏河北博物院</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+<script>
+        // 初始化每个3D模型
+        // 定义一个函数来初始化每个3D模型
+        function init3DModel(canvasId, modelPath) {
+            const canvas = document.getElementById(canvasId);
+            if (!canvas) {
+                console.error('Canvas not found.');
+                return;
+            }
+
+            const scene = new THREE.Scene();
+            // 设置场景背景颜色可以替换为其他十六进制颜色值
+            scene.background = new THREE.Color(0xFFFFFF);
+
+            const camera = new THREE.PerspectiveCamera(75, canvas.offsetWidth / canvas.offsetHeight, 0.1, 1000);
+            const renderer = new THREE.WebGLRenderer({ canvas });
+            renderer.setSize(canvas.offsetWidth, canvas.offsetHeight);
+
+            const ambientLight = new THREE.AmbientLight(0x404040);
+            scene.add(ambientLight);
+            const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+            directionalLight.position.set(1, 1, 1).normalize();
+            scene.add(directionalLight);
+
+            const loader = new THREE.GLTFLoader();
+            loader.load(modelPath, (gltf) => {
+                const model = gltf.scene;
+                model.scale.set(3.0, 3.0, 3.0);
+                model.position.set(0, 0, 0);
+                scene.add(model);
+                const cameraDistance = 5;
+                camera.position.set(0, 0, cameraDistance);
+                camera.lookAt(model.position);
+
+                function animate() {
+                    requestAnimationFrame(animate);
+                    model.rotation.y += 0.01;
+                    renderer.render(scene, camera);
+                }
+                animate();
+            }, undefined, (error) => {
+                console.error(error);
+            });
+        }
+
+        init3DModel('canvas1', './司母辛方鼎.glb');
+        init3DModel('canvas2', './大盂鼎.glb');
+        init3DModel('canvas3', './虢季子白盘.glb');
+        init3DModel('canvas4', './莲鹤方壶.glb');
+        init3DModel('canvas5', './吴王夫差剑.glb');
+        init3DModel('canvas6', './曾侯乙尊盘.glb');
+        init3DModel('canvas7', './错金银镶嵌丝网套铜壶.glb');
+        init3DModel('canvas8', './长信宫灯.glb');
+
+        const threejsCanvases = document.querySelectorAll('.threejs-canvas');
+        threejsCanvases.forEach((canvas, index) => {
+            const modelPath = canvas.dataset.model;
+            init3DModel(canvas.id || `canvas-${index + 4}`, modelPath);
+        });
+    </script>
+
+    <!-- 小窗播放数字人视频 -->
+    <div id="popup-window" class="hidden fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-8 rounded-md shadow-lg z-50">
+        <div id="popup-content" class="flex space-x-4">
+            <div id="image-section" class="flex-1">
+                <img id="popup-image" class="w-full h-auto rounded-md" src="" alt="文物图片">
+            </div>
+            <div id="video-section" class="flex-1">
+                <video id="popup-video" class="w-full h-auto rounded-md" controls>
+                    <source src="" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <button id="close-popup" class="absolute top-2 right-2 text-gray-600 hover:text-gray-800 transition duration-300">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+    <script>
+        function initArtifactPopup() {
+            const artifactItems = document.querySelectorAll('.artifact-item');
+            const popupWindow = document.getElementById('popup-window');
+            const popupImage = document.getElementById('popup-image');
+            const popupVideo = document.getElementById('popup-video');
+            const closePopup = document.getElementById('close-popup');
+
+            // 为每个文物项添加点击事件监听器
+            artifactItems.forEach((item) => {
+                item.addEventListener('click', () => {
+                    const imageSrc = item.dataset.image;
+                    const videoSrc = item.dataset.video;
+
+                    popupImage.src = imageSrc;
+                    popupVideo.src = videoSrc;
+
+                    // 加载视频
+                    popupVideo.load();
+
+                    // 显示弹出窗口
+                    popupWindow.classList.remove('hidden');
+                });
+            });
+
+            // 为关闭按钮添加点击事件监听器
+            closePopup.addEventListener('click', () => {
+                popupWindow.classList.add('hidden');
+            });
+
+            // 为弹出窗口添加点击事件监听器，点击窗口外部关闭窗口
+            popupWindow.addEventListener('click', (event) => {
+                if (event.target === popupWindow) {
+                    popupWindow.classList.add('hidden');
+                }
+            });
+        }
+
+        // 在页面加载完成后调用初始化函数
+        window.addEventListener('load', () => {
+            initArtifactPopup();
+        });
+    </script>
+</body>
+</html>

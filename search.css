@@ -1,0 +1,39 @@
+.search-card {
+    width: 1200px;       /* 修正尺寸单位 */
+    height: 50px;       /* 标准输入框高度 */
+    margin: 20px auto;  /* 与.hero-card保持相同外边距逻辑 */
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 4px;  /* 与.gallery-grid的gap值比例协调 */
+    border: 1px solid #ddd; /* 与.exhibit-card边框一致 */
+}
+
+.search-input {
+    flex: 1;
+    height: 100%;
+    padding: 0 15px;
+    border: none;
+    outline: none;
+    font-size: 1rem;     /* 与.nav-item字体比例协调 */
+    font-family: '宋体', SimSun, serif; /* 继承首页字体 */
+    color: #333;        /* 与正文文本颜色匹配 */
+}
+
+.search-button {
+    width: 50px;        /* 固定按钮宽度 */
+    height: 100%;
+    border: none;
+    background: #8b5a2b; /* 使用导航栏主色 */
+    cursor: pointer;
+    transition: background-color 0.3s; /* 与.nav-item过渡效果同步 */
+}
+
+.search-button:hover {
+    background-color: #6d4420; /* 主色加深版 */
+}
+
+.search-icon {
+    width: 24px;        /* 标准图标尺寸 */
+    height: 24px;
+    filter: brightness(0) invert(1); /* 反白显示图标 */}
